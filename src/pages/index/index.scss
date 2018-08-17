@@ -1,0 +1,29 @@
+
+
+
+.item{
+   &-body1{
+     width:100%;
+    height:200px;
+     background-color: burlywood;
+
+}
+  &-body2{
+    width:200px;
+    height:200px;
+    background-color: brown;
+  }
+
+  &-body3{
+    width:200px;
+    height:200px;
+    background-color: red;
+    margin-left: 20px;
+  }
+  &-row{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 30px;
+  }
+}
