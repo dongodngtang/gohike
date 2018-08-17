@@ -1,8 +1,10 @@
 import Taro, { Component } from '@tarojs/taro'
 import { View, Text } from '@tarojs/components'
 import './index.scss'
-import {activityDetail} from '../../service/SocialDao'
+import { activityDetail } from '../../service/SocialDao'
 import { logMsg } from '../../net/utils';
+import NavBar from '../../component/NavBar';
+
 
 export default class Index extends Component {
 
@@ -10,35 +12,48 @@ export default class Index extends Component {
     navigationBarTitleText: '首页'
   }
 
-  componentWillMount () { }
+  constructor() {
+    super(...arguments)
+    this.state = {
+      activity: {}
+    }
+  }
 
-  componentDidMount () {
-    activityDetail(17,data=>{
-      logMsg('活动呢',data)
+  componentWillMount() { }
+
+  componentDidMount() {
+    activityDetail(17, data => {
+      this.setState({
+        activity: {}
+      })
     })
-   }
+  }
 
-  componentWillUnmount () { }
+  componentWillUnmount() { }
 
-  componentDidShow () { }
+  componentDidShow() { }
 
-  componentDidHide () { }
+  componentDidHide() { }
 
-  render () {
-    return (<View className='index'>
-        <Text>Hello world!</Text>
+  render() {
 
-        <View className='item-body1'/>
-        <View className='item-body2'/>
+    return (<View>
 
+     <NavBar />
 
-        <View className='item-row'>
-          <View className='item-body2'/>
-          <View className='item-body3'/>
-        </View>
+      <Text>Hello world!</Text>
+
+      <View className='item-body1' />
+      <View className='item-body2' />
 
 
+      <View className='item-row'>
+        <View className='item-body2' />
+        <View className='item-body3' />
       </View>
+
+
+    </View>
     )
   }
 }
