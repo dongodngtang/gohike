@@ -20,25 +20,7 @@
   background:$_ECE;
 }
 
-.nav{
-  height: 44pt;
-  background: white;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-   &-title{
-     font-size: 17pt;
-   }
-   &-button{
-     font-size: 15pt;
-     height: 44pt;
-     width:50pt;
-     justify-content: center;
-     align-items: center;
-     display: flex;
-     color: $_818
-   }
-}
+
 
 
 

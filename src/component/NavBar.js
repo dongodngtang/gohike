@@ -1,6 +1,6 @@
 import Taro, { Component } from '@tarojs/taro'
 import { View, Text, ScrollView } from '@tarojs/components'
-import '../app.scss'
+import '../scss/nav.scss'
 import { logMsg } from '../net/utils';
 
 export default class NavBar extends Component {
