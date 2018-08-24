@@ -59,7 +59,7 @@ export default class Index extends Component {
 
             <View className={'topic_total'}>
               <Text className={'topic_txt_total'}>{`${page_views}阅读`}</Text>
-              <Text className={'topic_txt_total1'}>{`0评论`}</Text>
+
 
               <View style={'flex: 1;'}/>
 
