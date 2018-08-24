@@ -1,17 +1,17 @@
 .nav {
     @import '../app.scss';
-    height: 44pt;
+    height: 80px;
     background: white;
     display: flex;
     flex-direction: row;
     align-items: center;
     &-title {
-        font-size: 16pt;
+        font-size: 32px;
     }
     &-button {
-        font-size: 14pt;
-        height: 44pt;
-        width: 50pt;
+        font-size: 28px;
+        height: 80px;
+        width: 100px;
         justify-content: center;
         align-items: center;
         display: flex;

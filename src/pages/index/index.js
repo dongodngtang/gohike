@@ -47,7 +47,7 @@ export default class Index extends Component {
 
     return (<View>
 
-      <NavBar />
+      <NavBar title={'活动详情'}/>
       <Image
         className='activity-banner'
         src={cover_link}
