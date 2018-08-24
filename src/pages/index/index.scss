@@ -3,7 +3,7 @@
     &-banner {
         height: 380px;
         width: 100%;
-        
+
     }
     &-user {
         height: 120px;
@@ -26,7 +26,7 @@
     &-column {
       display: flex;
       flex-direction: column;
-    
+
   }
     &-nickname {
         font-size: 28px;
@@ -37,6 +37,58 @@
         color: $_D8D;
         margin-top:10px;
     }
-   
+  &-title{
+    padding-left: 34px;
+    padding-right: 34px;
+    background-color: white;
+  }
+  &-topic-head{
+    padding-left: 34px;
+    padding-right: 34px;
+    background: #fff;
+  }
+  &-topic_title{
+    font-size: 36px;
+    margin-top: 24px;
+    line-height: 44px;
+  }
+  .topic_total{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 10px;
+
+  }
+  .topic_txt_total{
+    font-size: 24px;
+    color: $_D8D;
+  }
+  .topic_txt_total1{
+    font-size: 24px;
+    color: #D8D8D8;
+    margin-left: 20px;
+  }
+  .status_tag{
+    background: #FF8C00;
+    height: 40px;
+    width: 100px;
+    border-radius: 6px;
+  }
+  .status_cn{
+    font-size: 24px;
+    color:#fff;
+  }
+  .flex-column{
+    display: flex;
+    flex-direction: column;
+  }
+  .flex-center{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+
 }
 

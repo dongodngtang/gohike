@@ -50,9 +50,28 @@ export default class Index extends Component {
       <NavBar />
       <Image
         className='activity-banner'
-        src={cover_link} />
-     
-      <Text>{name}</Text>
+        src={cover_link}
+      />
+
+        <View className="activity activity-topic-head">
+          <View className={'flex-column'}>
+            <Text className={"activity-topic_title"}>{name}</Text>
+
+            <View className={'topic_total'}>
+              <Text className={'topic_txt_total'}>{`${page_views}阅读`}</Text>
+              <Text className={'topic_txt_total1'}>{`0评论`}</Text>
+
+              <View style={'flex: 1;'}/>
+
+              <View className={'status_tag flex-center'}>
+                <Text className={'status_cn'}>{status_cn}</Text>
+              </View>
+
+
+            </View>
+          </View>
+
+
 
       <View className='activity-user'>
         <Image
@@ -68,7 +87,7 @@ export default class Index extends Component {
 
       </View>
       <RichText nodes={description} />
-
+        </View>
     </View>
     )
   }
