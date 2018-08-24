@@ -69,6 +69,7 @@ export default class Index extends Component {
 
 
             </View>
+            <View className={'line'} style={"margin-top:10px"}/>
           </View>
 
 

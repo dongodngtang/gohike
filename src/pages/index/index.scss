@@ -65,11 +65,11 @@
   }
   .topic_txt_total1{
     font-size: 24px;
-    color: #D8D8D8;
+    color: $_D8D;
     margin-left: 20px;
   }
   .status_tag{
-    background: #FF8C00;
+    background: $_FF8;
     height: 40px;
     width: 100px;
     border-radius: 6px;
@@ -88,7 +88,16 @@
     align-items: center;
     justify-content: center;
   }
-
+  img{
+    width: 100%;
+    position:relative;
+    z-index:1;
+  }
+  .line{
+    height: 1px;
+    width: 100%;
+    background: $_ECE;
+  }
 
 }
 
