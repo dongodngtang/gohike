@@ -94,58 +94,48 @@ export default class Index extends Component {
 
           <View className={'act_card'}>
 
-            <View className={'act_item '}>
+            <View className={'act_item'}>
               <Text
                 className={'act_departure_city'}>出发地</Text>
 
               <Text
                 className={'act_placeholder'}>{departure_city}</Text>
             </View>
-            <View className={'act_item '}>
+            <View className={'act_item'}>
               <Text
-                style={styles.act_departure_city}>目的地</Text>
+                className={'act_departure_city'}>目的地</Text>
 
               <Text
-                style={styles.act_placeholder}>{`${destination_city} ${destination}`}</Text>
+                className={'act_placeholder'}>{`${destination_city} ${destination}`}</Text>
             </View>
 
-            <View style={styles.act_item}>
+            <View className={'act_item'}>
               <Text
-                style={styles.act_departure_city}>行程日期</Text>
+                className={'act_departure_city'}>行程日期</Text>
 
               <Text
-                style={styles.act_placeholder}>{activity_time}</Text>
+                className={'act_placeholder'}>{activity_time}</Text>
 
             </View>
 
-            <View style={styles.act_item}>
+            <View className={'act_item'}>
               <Text
-                style={styles.act_departure_city}>集合时间</Text>
+                className={'act_departure_city'}>集合时间</Text>
 
               <Text
-                style={styles.act_placeholder}>{unix_format(begin_time, 'YYYY年MM月DD HH:mm')}</Text>
+                className={'act_placeholder'}>{unix_format(begin_time, 'YYYY年MM月DD HH:mm')}</Text>
 
             </View>
-            <View style={{...Styles.row_center}}>
-              <Text
-                style={styles.act_join}>{`已报名 ${apply_numbers} / ${mem_limit}人`}</Text>
-              <View style={{flex: 1}}/>
 
-              <Text
-                onPress={() => {
-                  router.toSignMembers(activity_members)
-                }}
-                style={[styles.act_join, {marginRight: 10}]}>点击查看更多</Text>
-            </View>
 
-            <View style={[styles.act_item, {height: 36}]}>
+            <View className={'act_item'} style={"margin-top:20px"}>
               {!isEmpty(activity_members) && activity_members.map((item, index) => {
 
 
-                return <ImageLoad
+                return <Image
                   key={`activity_members${index}`}
-                  style={styles.act_join_avatar}
-                  source={{uri: item.avatar}}/>
+                  className={'act_join_avatar'}
+                  src={item.avatar}/>
               })}
 
 
