@@ -118,6 +118,28 @@
     border-radius: 28px;
     margin-right: 6px;
   }
+  .act_enter{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100px;
+    width: 100%;
+    background: white;
+    z-index: 100;
+    border-top: 1px solid $_ECE;
+  }
+  .join_activity{
+    background: $_FF8;
+    flex:2;
+    height: 100px;
+  }
+  .join_line{
+    width: 1px;
+    height: 100px;
+    background: $_ECE;
+  }
+
 
 }
 

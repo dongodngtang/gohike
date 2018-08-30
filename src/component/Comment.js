@@ -33,6 +33,7 @@ export default class Comment extends Component {
 
   render() {
     return <View className={'comment'}>
+
       <View className={'comment_top flex-row'}>
         <Text className={'comment_cancel'}>{`评论 ( ${this.state.total_comments} )`}</Text>
         <View style={{flex: 1}}/>
@@ -74,6 +75,8 @@ export default class Comment extends Component {
 
         </View>
       })}
+
+      <View style={{height:100}}/>
 
     </View>
   }
@@ -125,5 +128,17 @@ const styles = {
   reply_num: {
     fontSize: 12,
     color: Colors._009
-  }
+  },
+  act_enter: {
+    height: 50,
+    width: '100%',
+    backgroundColor: 'white',
+    position: 'absolute',
+    bottom: 0,
+    display:'flex',
+    flexDirection:'row',
+    alignItems:'center',
+    borderTopWidth: 1,
+    borderTopColor: Colors._ECE
+  },
 }

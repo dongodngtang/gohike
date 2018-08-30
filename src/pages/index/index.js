@@ -5,6 +5,7 @@ import {activityDetail} from '../../service/SocialDao'
 import {logMsg, unix_format, isEmpty, getDateDiff, isStrNull} from '../../net/utils';
 import NavBar from '../../component/NavBar';
 import Comment from '../../component/Comment'
+import {Colors} from "../../net/Theme";
 
 
 export default class Index extends Component {
@@ -149,6 +150,26 @@ export default class Index extends Component {
             target_id: id,
             target_type: 'activity'
           }}/>}
+
+          <View className={'act_enter flex-row'}>
+            <View
+              className={'flex-center'}
+              style={{flex:1}}>
+              <Text style={{fontSize:17,color:Colors._494}}>咨询</Text>
+            </View>
+            <View className={'join_line'}/>
+            <View
+              className={'flex-center'}
+              style={{flex:1}}>
+              <Text style={{fontSize:17,color:Colors._494}}>收藏</Text>
+            </View>
+
+            <View className={'join_activity flex-center'}>
+              <Text style={{fontSize:17,color:'white'}}>报名参加</Text>
+            </View>
+
+
+          </View>
 
         </View>
       </View>
