@@ -7,8 +7,8 @@ export function activityDetail(id,resolve,reject){
     },reject)
 }
 
-export function comments(id,resolve,reject){
-    get(api.activities+`/${id}`,{},ret=>{
+export function comments(body,resolve,reject){
+    get(api.comments,body,ret=>{
         resolve(ret.data)
     },reject)
 }

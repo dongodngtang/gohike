@@ -1,0 +1,19 @@
+
+
+.comment{
+  @import '../app.scss';
+  .comment_top{
+    height: 80px;
+    width: 100%;
+    border-bottom: 1px solid $_ECE;
+    margin-top: 120px;
+  }
+  .comment_cancel{
+    font-size: 28px;
+    color:$_D8D
+  }
+  .comment_confirm{
+    font-size: 28px;
+    color:$_02A
+  }
+}

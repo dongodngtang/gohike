@@ -2,8 +2,9 @@ import Taro, {Component} from '@tarojs/taro'
 import {View, Text, Image, RichText} from '@tarojs/components'
 import './index.scss'
 import {activityDetail} from '../../service/SocialDao'
-import {logMsg, unix_format, isEmpty, getDateDiff} from '../../net/utils';
+import {logMsg, unix_format, isEmpty, getDateDiff, isStrNull} from '../../net/utils';
 import NavBar from '../../component/NavBar';
+import Comment from '../../component/Comment'
 
 
 export default class Index extends Component {
@@ -143,6 +144,12 @@ export default class Index extends Component {
 
           </View>
           <RichText nodes={description}/>
+
+          {isStrNull(id) ? null : <Comment target={{
+            target_id: id,
+            target_type: 'activity'
+          }}/>}
+
         </View>
       </View>
     )
