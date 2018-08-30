@@ -2,14 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ca6949a8-10ae-4348-b1fe-ff7020260a87" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/component/Comment.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/net/Theme.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/scss/comment.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/net/api.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/net/api.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/Comment.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/Comment.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/index/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/service/SocialDao.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/service/SocialDao.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/comment.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/comment.scss" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -22,7 +18,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.7322835">
+    <splitter split-orientation="horizontal" split-proportion="0.72519684">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file leaf-file-name="app.scss" pinned="false" current-in-tab="false">
@@ -37,8 +33,8 @@
           <file leaf-file-name="index.scss" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/pages/index/index.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="198">
-                  <caret line="11" column="28" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
+                <state relative-caret-position="461">
+                  <caret line="134" column="18" lean-forward="true" selection-start-line="134" selection-start-column="18" selection-end-line="134" selection-end-column="18" />
                 </state>
               </provider>
             </entry>
@@ -46,8 +42,17 @@
           <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/pages/index/index.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="302">
-                  <caret line="150" column="14" selection-start-line="150" selection-start-column="14" selection-end-line="150" selection-end-column="14" />
+                <state relative-caret-position="-111">
+                  <caret line="134" column="15" selection-start-line="134" selection-start-column="15" selection-end-line="134" selection-end-column="15" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="utils.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/net/utils.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="90">
+                  <caret line="7" column="16" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
                 </state>
               </provider>
             </entry>
@@ -55,8 +60,8 @@
           <file leaf-file-name="Comment.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/component/Comment.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="330">
-                  <caret line="122" column="18" selection-start-line="122" selection-start-column="18" selection-end-line="122" selection-end-column="18" />
+                <state relative-caret-position="323">
+                  <caret line="71" column="36" lean-forward="true" selection-start-line="71" selection-start-column="36" selection-end-line="71" selection-end-column="36" />
                   <folding>
                     <element signature="e#113#157#0" expanded="true" />
                   </folding>
@@ -76,8 +81,8 @@
           <file leaf-file-name="Theme.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/net/Theme.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="251">
-                  <caret line="41" column="29" lean-forward="true" selection-start-line="41" selection-start-column="29" selection-end-line="41" selection-end-column="29" />
+                <state relative-caret-position="274">
+                  <caret line="24" column="6" selection-start-line="24" selection-start-column="2" selection-end-line="24" selection-end-column="6" />
                 </state>
               </provider>
             </entry>
@@ -106,29 +111,24 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="NavBar.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/component/NavBar.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="36">
-                  <caret line="2" selection-start-line="2" selection-end-line="2" selection-end-column="25" />
-                </state>
-              </provider>
-            </entry>
-          </file>
           <file leaf-file-name="comment.scss" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/scss/comment.scss">
-              <provider selected="true" editor-type-id="text-editor" />
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="306">
+                  <caret line="17" column="3" selection-start-line="17" selection-start-column="3" selection-end-line="17" selection-end-column="3" />
+                </state>
+              </provider>
             </entry>
           </file>
         </leaf>
       </split-first>
       <split-second>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+        <leaf>
           <file leaf-file-name="comment.scss" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/scss/comment.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="54">
-                  <caret line="3" column="20" selection-start-line="3" selection-start-column="20" selection-end-line="3" selection-end-column="20" />
+                <state relative-caret-position="395">
+                  <caret line="57" column="20" selection-start-line="57" selection-start-column="20" selection-end-line="57" selection-end-column="20" />
                 </state>
               </provider>
             </entry>
@@ -161,13 +161,13 @@
         <option value="$PROJECT_DIR$/src/component/NavBar.js" />
         <option value="$PROJECT_DIR$/src/scss/nav.scss" />
         <option value="$PROJECT_DIR$/src/app.scss" />
-        <option value="$PROJECT_DIR$/src/pages/index/index.scss" />
         <option value="$PROJECT_DIR$/src/net/api.js" />
         <option value="$PROJECT_DIR$/src/service/SocialDao.js" />
-        <option value="$PROJECT_DIR$/src/scss/comment.scss" />
-        <option value="$PROJECT_DIR$/src/pages/index/index.js" />
         <option value="$PROJECT_DIR$/src/net/Theme.js" />
+        <option value="$PROJECT_DIR$/src/pages/index/index.js" />
+        <option value="$PROJECT_DIR$/src/pages/index/index.scss" />
         <option value="$PROJECT_DIR$/src/component/Comment.js" />
+        <option value="$PROJECT_DIR$/src/scss/comment.scss" />
       </list>
     </option>
   </component>
@@ -188,8 +188,8 @@
     </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="2018" />
-    <option name="y" value="46" />
+    <option name="x" value="2038" />
+    <option name="y" value="41" />
     <option name="width" value="1714" />
     <option name="height" value="935" />
   </component>
@@ -212,48 +212,6 @@
               <item name="gohike" type="b2602c69:ProjectViewProjectNode" />
               <item name="gohike" type="462c0819:PsiDirectoryNode" />
               <item name="config" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="gohike" type="b2602c69:ProjectViewProjectNode" />
-              <item name="gohike" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="gohike" type="b2602c69:ProjectViewProjectNode" />
-              <item name="gohike" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="component" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="gohike" type="b2602c69:ProjectViewProjectNode" />
-              <item name="gohike" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="net" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="gohike" type="b2602c69:ProjectViewProjectNode" />
-              <item name="gohike" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="gohike" type="b2602c69:ProjectViewProjectNode" />
-              <item name="gohike" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
-              <item name="index" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="gohike" type="b2602c69:ProjectViewProjectNode" />
-              <item name="gohike" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="scss" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="gohike" type="b2602c69:ProjectViewProjectNode" />
-              <item name="gohike" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -303,7 +261,7 @@
       <workItem from="1535090728776" duration="5393000" />
       <workItem from="1535595223093" duration="1081000" />
       <workItem from="1535599342395" duration="2044000" />
-      <workItem from="1535608819446" duration="2438000" />
+      <workItem from="1535608819446" duration="9208000" />
     </task>
     <task id="LOCAL-00001" summary="活动页">
       <created>1534736207230</created>
@@ -354,25 +312,40 @@
       <option name="project" value="LOCAL" />
       <updated>1535599784561</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="活动评论">
+      <created>1535612014873</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1535612014873</updated>
+    </task>
+    <task id="LOCAL-00009" summary="报名参加">
+      <created>1535615149417</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1535615149417</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22695000" />
+    <option name="totallyTimeSpent" value="29465000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="2018" y="46" width="1714" height="935" extended-state="0" />
+    <frame x="2038" y="41" width="1714" height="935" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="ReactNative" order="7" />
+      <window_info anchor="bottom" id="Messages" order="8" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32883435" />
       <window_info id="npm" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.32883435" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.32883435" />
       <window_info anchor="bottom" id="TypeScript" order="8" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24985233" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24985233" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
@@ -381,7 +354,6 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="bottom" id="Messages" order="8" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="1" />
@@ -437,7 +409,9 @@
     <MESSAGE value="活动页UI调整5" />
     <MESSAGE value="活动页UI调整6" />
     <MESSAGE value="活动页 基本信息" />
-    <option name="LAST_COMMIT_MESSAGE" value="活动页 基本信息" />
+    <MESSAGE value="活动评论" />
+    <MESSAGE value="报名参加" />
+    <option name="LAST_COMMIT_MESSAGE" value="报名参加" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -445,9 +419,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/app.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="666">
@@ -727,16 +698,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/index/index.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="11" column="28" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/scss/comment.scss">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/service/SocialDao.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
@@ -757,20 +718,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/index/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="302">
-          <caret line="150" column="14" selection-start-line="150" selection-start-column="14" selection-end-line="150" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/net/Theme.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="251">
-          <caret line="41" column="29" lean-forward="true" selection-start-line="41" selection-start-column="29" selection-end-line="41" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/app.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="63">
@@ -785,13 +732,48 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/net/Theme.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="274">
+          <caret line="24" column="6" selection-start-line="24" selection-start-column="2" selection-end-line="24" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/net/utils.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="7" column="16" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/index/index.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="461">
+          <caret line="134" column="18" lean-forward="true" selection-start-line="134" selection-start-column="18" selection-end-line="134" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/index/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-111">
+          <caret line="134" column="15" selection-start-line="134" selection-start-column="15" selection-end-line="134" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/component/Comment.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="122" column="18" selection-start-line="122" selection-start-column="18" selection-end-line="122" selection-end-column="18" />
+        <state relative-caret-position="323">
+          <caret line="71" column="36" lean-forward="true" selection-start-line="71" selection-start-column="36" selection-end-line="71" selection-end-column="36" />
           <folding>
             <element signature="e#113#157#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/scss/comment.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="395">
+          <caret line="57" column="20" selection-start-line="57" selection-start-column="20" selection-end-line="57" selection-end-column="20" />
         </state>
       </provider>
     </entry>

@@ -44,54 +44,46 @@ export default class Comment extends Component {
       {this.state.items.length > 0 && this.state.items.map((item, index) => {
         const {user, created_at, body, total_replies, id} = item;
         const {avatar, nick_name, user_id} = user;
-        return <View style={{paddingBottom: 12}}>
+        return <View
+          key={`comment${id}`}
+          style={{paddingBottom: 12}}>
           <View
-            className={'flex-row'}
-            style={styles.item_user}>
+            className={'flex-row item_user'}>
             <Image
-              style={styles.item_avatar}
+              className={'item_avatar'}
               src={avatar}
             />
 
             <View className={'flex-column'}>
-              <Text style={styles.item_nick}>{nick_name}</Text>
+              <Text className={'item_nick'}>{nick_name}</Text>
 
-              <Text style={styles.item_time}>{getDateDiff(created_at)}</Text>
+              <Text className={'item_time'}>{getDateDiff(created_at)}</Text>
             </View>
 
             <View style={{flex: 1}}/>
             <View
               style={{height: 60}}>
-              <Text style={styles.reply}>回复</Text>
+              <Text className={'reply'}>回复</Text>
             </View>
 
           </View>
-          <Text style={styles.comment}>{body}</Text>
+          <Text className={'comment_txt'}>{body}</Text>
 
           {total_replies > 0 ? <View
-            style={styles.reply_num_view}>
-            <Text style={styles.reply_num}>{`查看全部${total_replies}条回复 >>`}</Text>
+            className={'reply_num_view flex-row'}>
+            <Text className={'reply_num'}>{`查看全部${total_replies}条回复 >>`}</Text>
           </View> : null}
 
         </View>
       })}
 
-      <View style={{height:100}}/>
+      <View className={'marginH'}/>
 
     </View>
   }
 }
 
 const styles = {
-  item_user: {
-    height: 60,
-  },
-  item_avatar: {
-    height: 40,
-    width: 40,
-    borderRadius: 20,
-    marginRight: 12
-  },
   item_nick: {
     fontSize: 14,
     color: Colors._3CB

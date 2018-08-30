@@ -53,6 +53,7 @@ export default class Index extends Component {
     const {avatar, nick_name, user_id} = user;
     let activity_time = unix_format(begin_time, 'YYYY年MM月DD') + ` 至 ` + unix_format(end_time, 'YYYY年MM月DD')
 
+    let members = isEmpty(activity_members) ? [] : activity_members
     return (<View>
 
         <NavBar title={'活动详情'}/>
@@ -131,8 +132,7 @@ export default class Index extends Component {
 
 
             <View className={'act_item'} style={"margin-top:20px"}>
-              {!isEmpty(activity_members) && activity_members.map((item, index) => {
-
+              {members.map((item, index) => {
 
                 return <Image
                   key={`activity_members${index}`}
@@ -154,18 +154,18 @@ export default class Index extends Component {
           <View className={'act_enter flex-row'}>
             <View
               className={'flex-center'}
-              style={{flex:1}}>
-              <Text style={{fontSize:17,color:Colors._494}}>咨询</Text>
+              style={{flex: 1}}>
+              <Text style={{fontSize: 17, color: Colors._494}}>咨询</Text>
             </View>
             <View className={'join_line'}/>
             <View
               className={'flex-center'}
-              style={{flex:1}}>
-              <Text style={{fontSize:17,color:Colors._494}}>收藏</Text>
+              style={{flex: 1}}>
+              <Text style={{fontSize: 17, color: Colors._494}}>收藏</Text>
             </View>
 
             <View className={'join_activity flex-center'}>
-              <Text style={{fontSize:17,color:'white'}}>报名参加</Text>
+              <Text style={{fontSize: 17, color: 'white'}}>报名参加</Text>
             </View>
 
 

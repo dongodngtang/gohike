@@ -16,5 +16,45 @@
     font-size: 28px;
     color:$_02A
   }
-
+  .item_user{
+    height: 120px;
+  }
+  .item_avatar{
+    height: 80px;
+    width: 80px;
+    border-radius: 40px;
+    margin-right: 24px;
+  }
+  .item_nick{
+    font-size: 28px;
+    color: $_3CB;
+  }
+  .item_time{
+    font-size: 20px;
+    color:$_D8D;
+    margin-top: 10px;
+  }
+  .reply{
+    font-size: 26px;
+    color: $_02A;
+    margin-top: 20px;
+  }
+  .comment_txt{
+    font-size: 32px;
+    color: $_494;
+  }
+  .marginH{
+    height: 200px;
+  }
+  .reply_num{
+    font-size: 24px;
+    color: $_009;
+  }
+  .reply_num_view{
+    background: $_ECE;
+    border-radius: 4px;
+    height: 60px;
+    padding-left: 20px;
+    margin-top: 20px;
+  }
 }
