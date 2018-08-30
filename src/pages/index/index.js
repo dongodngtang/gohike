@@ -58,7 +58,7 @@ export default class Index extends Component {
 
         <NavBar title={'活动详情'}/>
         <Image
-          className='activity-banner'
+          className={"banner"}
           src={cover_link}
         />
 
@@ -83,7 +83,7 @@ export default class Index extends Component {
 
           <View className='activity-user'>
             <Image
-              className='activity-avatar'
+              className='avatar'
               src={avatar}
             />
 
