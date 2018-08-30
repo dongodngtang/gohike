@@ -1,35 +1,49 @@
-    $_ECE: #ECECEC;//背景色
-    $_333: #333333;
-    $_666: #666666;
-    $_999: #999999;
-    $_D1D: #D1D1D1;
-    $_3CB: #3CB371;
-    $_00F: #00FF00;
-    $_FF8: #FF8C00;
-    $_02A: #02A9EA;
-    $_009: #0090C1;
-    $_CD5: #CD5D67;
-    $_494: #494949;//一级标题
-    $_818: #818181;//二级标题
-    $_AEA: #AEAEAE;//一级内容
-    $_B5B: #B5B5B5;//二级内容
-    $_D8D: #D8D8D8;//三级内容
-    $_00B: #00BD70;//主颜色
+$_ECE: #ECECEC; //背景色
+$_333: #333333;
+$_666: #666666;
+$_999: #999999;
+$_D1D: #D1D1D1;
+$_3CB: #3CB371;
+$_00F: #00FF00;
+$_FF8: #FF8C00;
+$_02A: #02A9EA;
+$_009: #0090C1;
+$_CD5: #CD5D67;
+$_494: #494949; //一级标题
+$_818: #818181; //二级标题
+$_AEA: #AEAEAE; //一级内容
+$_B5B: #B5B5B5; //二级内容
+$_D8D: #D8D8D8; //三级内容
+$_00B: #00BD70; //主颜色
 
-.base{
-  background:$_ECE;
+.base {
+  background: $_ECE;
 }
 
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
 
+.flex-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 
+.flex-row{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
 
-
-.taro_page{
-  background:$_ECE;
+.taro_page {
+  background: $_ECE;
   bottom: 0;
 }
 
-.load{
+.load {
   height: 100%;
   width: 100%;
 }
