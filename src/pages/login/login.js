@@ -8,12 +8,17 @@
  */
 
 import Taro, {Component} from '@tarojs/taro'
-import {View, Text, Image, Input} from '@tarojs/components'
+import {View, Text, Button, Input} from '@tarojs/components'
 import './login.scss'
 import NavBar from '../../component/NavBar';
 import CountDownButton from '../../component/CountDownButton'
+import {logMsg} from "../../net/utils";
+
 
 export default class login extends Component {
+
+  phone = null;
+  vcode = null;
 
   render() {
     return <View className={'login'}>
@@ -22,8 +27,13 @@ export default class login extends Component {
       <View className={'card flex-column'}>
         <View style={'margin-top:80px'}/>
         <View className={'v_pwd flex-row'}>
-          <Input className={'input_name'}
-                 placeholder={'手机号码'}/>
+          <Input
+            type={'number'}
+            onInput={(txt => {
+              logMsg(txt)
+            })}
+            className={'input_name'}
+            placeholder={'手机号码'}/>
         </View>
 
         <View className={'v_pwd flex-row'}>
@@ -37,6 +47,8 @@ export default class login extends Component {
 
 
         </View>
+
+        <Button className={'btn_login'}>登录</Button>
 
       </View>
 

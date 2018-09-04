@@ -2,15 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ca6949a8-10ae-4348-b1fe-ff7020260a87" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/component/CountDownButton.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/login/login.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/login/login.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/scss/countdown.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/net/md5.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/net/utils.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/net/utils.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/index/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/net/api.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/net/api.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/login/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/login/login.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/login/login.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/login/login.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/service/SocialDao.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/service/SocialDao.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -35,37 +32,10 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/app.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="126">
-                  <caret line="10" column="25" lean-forward="true" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/package.json">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="216">
-                  <caret line="12" column="77" selection-start-line="12" selection-start-column="77" selection-end-line="12" selection-end-column="77" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="prod.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/config/prod.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="144">
-                  <caret line="8" column="1" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
-                </state>
-              </provider>
-            </entry>
-          </file>
           <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/pages/index/index.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="292">
+                <state relative-caret-position="2898">
                   <caret line="168" column="42" selection-start-line="168" selection-start-column="42" selection-end-line="168" selection-end-column="42" />
                   <folding>
                     <element signature="e#0#44#0" expanded="true" />
@@ -77,8 +47,8 @@
           <file leaf-file-name="login.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/pages/login/login.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="179">
-                  <caret line="34" column="29" selection-start-line="34" selection-start-column="29" selection-end-line="34" selection-end-column="29" />
+                <state relative-caret-position="306">
+                  <caret line="26" column="43" lean-forward="true" selection-start-line="26" selection-start-column="43" selection-end-line="26" selection-end-column="43" />
                   <folding>
                     <element signature="e#110#154#0" expanded="true" />
                   </folding>
@@ -86,11 +56,38 @@
               </provider>
             </entry>
           </file>
+          <file leaf-file-name="SocialDao.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/service/SocialDao.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="-58">
+                  <caret column="25" lean-forward="true" selection-start-column="25" selection-end-column="25" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="api.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/net/api.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="108">
+                  <caret line="6" column="29" selection-start-line="6" selection-start-column="29" selection-end-line="6" selection-end-column="29" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="md5.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/net/md5.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="167">
+                  <caret line="30" selection-start-line="30" selection-end-line="30" />
+                </state>
+              </provider>
+            </entry>
+          </file>
           <file leaf-file-name="CountDownButton.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/component/CountDownButton.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="304">
-                  <caret line="107" column="17" selection-start-line="107" selection-start-column="17" selection-end-line="107" selection-end-column="17" />
+                <state relative-caret-position="1638">
+                  <caret line="106" column="22" selection-start-line="106" selection-start-column="22" selection-end-line="106" selection-end-column="22" />
                   <folding>
                     <element signature="e#121#165#0" expanded="true" />
                   </folding>
@@ -110,7 +107,7 @@
           <file leaf-file-name="utils.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/net/utils.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="227">
+                <state relative-caret-position="234">
                   <caret line="15" column="23" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="23" />
                   <folding>
                     <element signature="e#0#31#0" expanded="true" />
@@ -131,12 +128,12 @@
         </leaf>
       </split-first>
       <split-second>
-        <leaf>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file leaf-file-name="login.scss" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/pages/login/login.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="161">
-                  <caret line="23" column="17" lean-forward="true" selection-start-line="23" selection-start-column="17" selection-end-line="23" selection-end-column="17" />
+                <state relative-caret-position="377">
+                  <caret line="42" column="16" selection-start-line="42" selection-start-column="16" selection-end-line="42" selection-end-column="16" />
                 </state>
               </provider>
             </entry>
@@ -144,7 +141,7 @@
           <file leaf-file-name="app.scss" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/app.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="124">
+                <state relative-caret-position="450">
                   <caret line="25" column="22" selection-start-line="25" selection-start-column="22" selection-end-line="25" selection-end-column="22" />
                 </state>
               </provider>
@@ -178,8 +175,6 @@
         <option value="$PROJECT_DIR$/src/net/fetch.js" />
         <option value="$PROJECT_DIR$/src/component/NavBar.js" />
         <option value="$PROJECT_DIR$/src/scss/nav.scss" />
-        <option value="$PROJECT_DIR$/src/net/api.js" />
-        <option value="$PROJECT_DIR$/src/service/SocialDao.js" />
         <option value="$PROJECT_DIR$/src/net/Theme.js" />
         <option value="$PROJECT_DIR$/src/component/Comment.js" />
         <option value="$PROJECT_DIR$/src/scss/comment.scss" />
@@ -191,9 +186,12 @@
         <option value="$PROJECT_DIR$/src/net/utils.js" />
         <option value="$PROJECT_DIR$/src/pages/index/index.js" />
         <option value="$PROJECT_DIR$/src/app.scss" />
-        <option value="$PROJECT_DIR$/src/pages/login/login.scss" />
         <option value="$PROJECT_DIR$/src/scss/countdown.scss" />
         <option value="$PROJECT_DIR$/src/component/CountDownButton.js" />
+        <option value="$PROJECT_DIR$/src/pages/login/login.scss" />
+        <option value="$PROJECT_DIR$/src/net/md5.js" />
+        <option value="$PROJECT_DIR$/src/service/SocialDao.js" />
+        <option value="$PROJECT_DIR$/src/net/api.js" />
         <option value="$PROJECT_DIR$/src/pages/login/login.js" />
       </list>
     </option>
@@ -215,7 +213,7 @@
     </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="2183" />
+    <option name="x" value="2111" />
     <option name="y" value="23" />
     <option name="width" value="1714" />
     <option name="height" value="935" />
@@ -239,12 +237,6 @@
               <item name="gohike" type="b2602c69:ProjectViewProjectNode" />
               <item name="gohike" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="gohike" type="b2602c69:ProjectViewProjectNode" />
-              <item name="gohike" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="component" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="gohike" type="b2602c69:ProjectViewProjectNode" />
@@ -277,6 +269,12 @@
               <item name="gohike" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="scss" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gohike" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gohike" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -329,7 +327,8 @@
       <workItem from="1535608819446" duration="9623000" />
       <workItem from="1535619336155" duration="3354000" />
       <workItem from="1535698955209" duration="606000" />
-      <workItem from="1536027417293" duration="4858000" />
+      <workItem from="1536027417293" duration="5333000" />
+      <workItem from="1536040875321" duration="2763000" />
     </task>
     <task id="LOCAL-00001" summary="活动页">
       <created>1534736207230</created>
@@ -415,27 +414,33 @@
       <option name="project" value="LOCAL" />
       <updated>1535622099566</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="倒计时控件">
+      <created>1536032322820</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1536032322821</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="38698000" />
+    <option name="totallyTimeSpent" value="41936000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="2183" y="23" width="1714" height="935" extended-state="0" />
+    <frame x="2111" y="23" width="1714" height="935" extended-state="0" />
     <editor active="true" />
     <layout>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24926166" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="ReactNative" order="7" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32883435" />
       <window_info id="npm" order="2" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.32515338" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24926166" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32883435" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.32515338" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="TypeScript" order="8" />
@@ -446,6 +451,7 @@
       <window_info anchor="bottom" id="Messages" order="8" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32883435" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -503,7 +509,8 @@
     <MESSAGE value="小程序适配" />
     <MESSAGE value="发布V1.0" />
     <MESSAGE value="修复布局样式" />
-    <option name="LAST_COMMIT_MESSAGE" value="修复布局样式" />
+    <MESSAGE value="倒计时控件" />
+    <option name="LAST_COMMIT_MESSAGE" value="倒计时控件" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -511,13 +518,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/net/fetch.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="19" column="18" selection-start-line="19" selection-start-column="18" selection-end-line="19" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/dev.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
@@ -719,24 +719,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/net/api.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/component/NavBar.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="36">
           <caret line="2" selection-start-line="2" selection-end-line="2" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/service/SocialDao.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="10" column="5" lean-forward="true" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -785,17 +771,7 @@
     <entry file="file://$PROJECT_DIR$/src/app.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
-          <caret line="10" column="25" lean-forward="true" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/net/utils.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="227">
-          <caret line="15" column="23" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="23" />
-          <folding>
-            <element signature="e#0#31#0" expanded="true" />
-          </folding>
+          <caret line="10" column="25" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
         </state>
       </provider>
     </entry>
@@ -808,7 +784,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/app.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="124">
+        <state relative-caret-position="450">
           <caret line="25" column="22" selection-start-line="25" selection-start-column="22" selection-end-line="25" selection-end-column="22" />
         </state>
       </provider>
@@ -822,18 +798,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/pages/index/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="292">
+        <state relative-caret-position="2898">
           <caret line="168" column="42" selection-start-line="168" selection-start-column="42" selection-end-line="168" selection-end-column="42" />
           <folding>
             <element signature="e#0#44#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/login/login.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="23" column="17" lean-forward="true" selection-start-line="23" selection-start-column="17" selection-end-line="23" selection-end-column="17" />
         </state>
       </provider>
     </entry>
@@ -844,20 +813,58 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/login/login.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="377">
+          <caret line="42" column="16" selection-start-line="42" selection-start-column="16" selection-end-line="42" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/net/utils.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="15" column="23" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="23" />
+          <folding>
+            <element signature="e#0#31#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/component/CountDownButton.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="107" column="17" selection-start-line="107" selection-start-column="17" selection-end-line="107" selection-end-column="17" />
+        <state relative-caret-position="1638">
+          <caret line="106" column="22" selection-start-line="106" selection-start-column="22" selection-end-line="106" selection-end-column="22" />
           <folding>
             <element signature="e#121#165#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/net/md5.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="167">
+          <caret line="30" selection-start-line="30" selection-end-line="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/net/api.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="6" column="29" selection-start-line="6" selection-start-column="29" selection-end-line="6" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/service/SocialDao.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-58">
+          <caret column="25" lean-forward="true" selection-start-column="25" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/pages/login/login.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="179">
-          <caret line="34" column="29" selection-start-line="34" selection-start-column="29" selection-end-line="34" selection-end-column="29" />
+        <state relative-caret-position="306">
+          <caret line="26" column="43" lean-forward="true" selection-start-line="26" selection-start-column="43" selection-end-line="26" selection-end-column="43" />
           <folding>
             <element signature="e#110#154#0" expanded="true" />
           </folding>
