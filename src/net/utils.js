@@ -13,6 +13,12 @@ export function isStrNull(str) {
     return str === null || str === undefined || str.length < 1;
 }
 
+export function toRoute(url) {
+  Taro.navigateTo({
+    url
+  })
+}
+
 export function showToast(msg) {
     Taro.showToast({
         title:msg

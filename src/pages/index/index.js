@@ -2,7 +2,7 @@ import Taro, {Component} from '@tarojs/taro'
 import {View, Text, Image, RichText} from '@tarojs/components'
 import './index.scss'
 import {activityDetail} from '../../service/SocialDao'
-import {logMsg, unix_format, isEmpty, getDateDiff, isStrNull} from '../../net/utils';
+import {logMsg, unix_format, isEmpty, getDateDiff, isStrNull, toRoute} from '../../net/utils';
 import NavBar from '../../component/NavBar';
 import Comment from '../../component/Comment'
 import {Colors} from "../../net/Theme";
@@ -164,7 +164,11 @@ export default class Index extends Component {
               <Text style={{fontSize: 17, color: Colors._494}}>收藏</Text>
             </View>
 
-            <View className={'join_activity flex-center'}>
+            <View
+              onClick={()=>{
+                toRoute('pages/login/login')
+              }}
+              className={'join_activity flex-center'}>
               <Text style={{fontSize: 17, color: 'white'}}>报名参加</Text>
             </View>
 
