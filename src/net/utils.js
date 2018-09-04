@@ -13,6 +13,12 @@ export function isStrNull(str) {
     return str === null || str === undefined || str.length < 1;
 }
 
+
+export function redirectTo(url) {
+  Taro.redirectTo({
+    url
+  })
+}
 export function toRoute(url) {
   Taro.navigateTo({
     url

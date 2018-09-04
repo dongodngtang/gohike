@@ -126,7 +126,7 @@ export default class CountDownButton extends Component {
         onClick={() => {
           if (!counting && enable && selfEnable) {
 
-            this.setState({selfEnable: false})
+
             onClick && onClick(this._shouldStartCountting)
           }
         }}>

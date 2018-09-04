@@ -1,5 +1,5 @@
 import api from '../net/api'
-import {get,post} from '../net/fetch'
+import {get,post,setToken} from '../net/fetch'
 import {isStrNull, showToast} from "../net/utils";
 import * as md5 from '../net/md5'
 
@@ -21,12 +21,12 @@ export function register(body, resolve, reject) {
   }, reject)
 }
 
-export function login(body, resolve, reject) {
+export function postLogin(body, resolve, reject) {
   if (!isStrNull(body.password))
     body.password = md5.hex_md5(body.password)
   post(api.login, body, ret => {
     let loginUser = ret.data;
-
+    setToken(loginUser.access_token)
     resolve(loginUser)
   }, reject)
 }
