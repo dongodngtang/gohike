@@ -11,7 +11,11 @@ export default class NavBar extends Component {
         const {title,leftName,rightName} = this.props;
         return (isWeApp?null:<View className='nav'>
 
-                <View className='nav-button'>{leftName?leftName:''}</View>
+                <View
+                  onClick={()=>{
+                    Taro.navigateBack({delta:1})
+                  }}
+                  className='nav-button'>{leftName?leftName:'返回'}</View>
                 <View style="flex:1" />
 
                 <Text className="nav-title">{title?title:'标题'}</Text>

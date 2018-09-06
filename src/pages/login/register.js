@@ -1,9 +1,9 @@
 /**
- * login.js
+ * register.js
  *
  * @des the file dees
  * @author lorne (2270333671@qq.com)
- * Created at 2018/9/4.
+ * Created at 2018/9/6.
  *
  */
 
@@ -12,27 +12,31 @@ import {View, Text, Button, Input} from '@tarojs/components'
 import './login.scss'
 import NavBar from '../../component/NavBar';
 import CountDownButton from '../../component/CountDownButton'
-import {isStrNull, logMsg, showToast, redirectTo, toRoute} from "../../net/utils";
-import {v_code, postLogin} from "../../service/SocialDao";
+import {isStrNull, logMsg, showToast, redirectTo} from "../../net/utils";
+import {v_code, postLogin,postRegister} from "../../service/SocialDao";
 
 
-export default class login extends Component {
+export default class register extends Component {
 
   constructor() {
     super(...arguments)
     this.phone = null
     this.vcode = null
-
+    this.password = null
   }
 
   onInput = e => {
-    this.phone = e.target.value
+    this.phone = e.target.value.trim()
+  }
+
+  onInputPwd = e => {
+    this.password = e.target.value.trim()
   }
 
 
   render() {
     return <View className={'login'}>
-      <NavBar title={'登录'}/>
+      <NavBar title={'注册'}/>
 
       <View className={'card flex-column-center'}>
         <View style={'margin-top:80px'}/>
@@ -47,7 +51,7 @@ export default class login extends Component {
         <View className={'v_pwd flex-row'}>
           <Input
             onInput={e => {
-              this.vcode = e.target.value
+              this.vcode = e.target.value.trim()
             }}
             className={'input_pwd'}
             placeholder={'短信验证码'}/>
@@ -59,7 +63,7 @@ export default class login extends Component {
                 return
               }
               let body = {
-                option_type: 'login',
+                option_type: 'register',
                 vcode_type: 'mobile',
                 mobile: this.phone
               };
@@ -71,36 +75,36 @@ export default class login extends Component {
 
 
         </View>
+        <View className={'v_pwd flex-row'}>
+          <Input
+            onInput={this.onInput}
+            className={'input_name'}
+            placeholder={'输入密码'}/>
+        </View>
 
         <Button
-          onClick={this.onLogin}
-          className={'btn_login'}>登录</Button>
+          onClick={this.onRegister}
+          className={'btn_login'}>注册</Button>
 
-        <View style="flex:1"/>
-        <Text
-          onClick={() => {
-            toRoute('register')
-          }}
-          className={'txt_register'}>没有账号？</Text>
 
       </View>
 
     </View>
   }
 
-  onLogin = () => {
-    if (isStrNull(this.vcode) || isStrNull(this.phone)) {
+  onRegister = () => {
+    if (isStrNull(this.vcode) || isStrNull(this.phone) || isStrNull(this.password)) {
       showToast('手机号或验证码不能为空')
       return
     }
     let body = {
-      type: 'vcode',
+      type: 'mobile',
       mobile: this.phone,
-      vcode: this.vcode
+      vcode: this.vcode,
+      password: this.password
     }
-    postLogin(body, data => {
-
-      showToast('登录成功')
+    postRegister(body, data => {
+      showToast('注册成功')
       redirectTo('pages/index/index')
     })
   }

@@ -1,45 +1,52 @@
-.login{
+.login {
   @import "../../app.scss";
 
-  .card{
+  .card {
     height: 1000px;
     width: 90%;
     background: white;
     border-radius: 6px;
     margin: 80px auto auto;
   }
-  .input_name{
+  .input_name {
     height: 88px;
-    flex:1;
+    flex: 1;
     font-size: 30px;
     padding-left: 20px;
   }
-  .v_pwd{
+  .v_pwd {
     height: 88px;
     width: 80%;
     margin-top: 40px;
     border: 2px solid $_ECE;
   }
-  .input_pwd{
+  .input_pwd {
     height: 88px;
     width: 240px;
     font-size: 30px;
     padding-left: 20px;
   }
-  .btn_code{
+  .btn_code {
     height: 80px;
     background: #02A9EA;
-    flex:1;
-    margin:4px;
+    flex: 1;
+    margin: 4px;
     border-radius: 4px;
   }
 
-  .btn_login{
+  .btn_login {
     height: 80px;
     background: #02A9EA;
     width: 80%;
     border: 0 solid white;
     margin-top: 80px;
-    color:white;
+    color: white;
+  }
+
+  .txt_register {
+    color: #02A9EA;
+    font-size: 32px;
+    text-underline: #02A9EA;
+    margin-bottom: 100px;
   }
 }
