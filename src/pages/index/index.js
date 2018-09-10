@@ -2,10 +2,11 @@ import Taro, {Component} from '@tarojs/taro'
 import {View, Text, Image, RichText} from '@tarojs/components'
 import './index.scss'
 import {activityDetail} from '../../service/SocialDao'
-import {logMsg, unix_format, isEmpty, getDateDiff, isStrNull, toRoute} from '../../net/utils';
+import {logMsg, unix_format, isEmpty, getDateDiff, isStrNull, redirectTo, isLogin} from '../../net/utils';
 import NavBar from '../../component/NavBar';
 import Comment from '../../component/Comment'
 import {Colors} from "../../net/Theme";
+import { getUser } from '../../../.temp/net/utils';
 
 
 export default class Index extends Component {
@@ -17,7 +18,8 @@ export default class Index extends Component {
   constructor() {
     super(...arguments)
     this.state = {
-      activity: {}
+      activity: {},
+      member:{}
     }
   }
 
@@ -27,8 +29,18 @@ export default class Index extends Component {
   componentDidMount() {
     logMsg('路由参数', this.$router.params)
     activityDetail(17, data => {
+      
       this.setState({
         activity: data
+      })
+      if (isEmpty(data.activity_members) || !isLogin())
+        return
+        data.activity_members.forEach(item => {
+        if (getUser().user_id === item.user_id) {
+          this.setState({
+            member: item
+          })
+        }
       })
     })
   }
@@ -165,9 +177,7 @@ export default class Index extends Component {
             </View>
 
             <View
-              onClick={()=>{
-                toRoute('pages/login/login')
-              }}
+              onClick={this.toJoinClick}
               className={'join_activity flex-center'}>
               <Text style={{fontSize: 17, color: 'white'}}>报名参加</Text>
             </View>
@@ -178,6 +188,16 @@ export default class Index extends Component {
         </View>
       </View>
     )
+  }
+
+  toJoinClick = ()=>{
+    if(isLogin()){
+      let {
+        id
+      } = this.state.activity;
+      redirectTo(`pages/login/apply?id=${id}&member=${JSON.stringify(this.state.member)}`)
+    }else
+    redirectTo('pages/login/login')
   }
 }
 

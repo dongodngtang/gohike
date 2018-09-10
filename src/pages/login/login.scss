@@ -49,4 +49,26 @@
     text-underline: #02A9EA;
     margin-bottom: 100px;
   }
+
+  .apply_name{
+    font-size: 30px;
+    color: $_333;
+  }
+
+  .apply_i {
+    height: 88px;
+    width: 80%;
+    margin-top: 20px;
+    border: 2px solid $_ECE;
+    padding-left: 30px;
+  }
+
+  .btn_apply {
+    height: 80px;
+    background:$_FF8;
+    width: 80%;
+    border: 0 solid white;
+    margin-top: 80px;
+    color: white;
+  }
 }

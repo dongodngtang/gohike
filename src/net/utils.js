@@ -2,6 +2,21 @@ import Taro from '@tarojs/taro'
 import moment from 'moment'
 import _ from 'lodash'
 
+
+global.loginUser = null;
+
+export function setUser(login){
+    global.loginUser = login
+}
+
+export function getUser(){
+    return global.loginUser
+}
+
+export function isLogin(){
+    return !isEmpty(global.loginUser)
+}
+
 export function logMsg(...msg) {
     console.log(...msg)
 }

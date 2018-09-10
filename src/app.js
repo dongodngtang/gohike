@@ -9,7 +9,8 @@ class App extends Component {
     pages: [
       'pages/index/index',
       'pages/login/login',
-      'pages/login/register'
+      'pages/login/register',
+      'pages/login/apply'
     ],
     window: {
       backgroundTextStyle: 'light',

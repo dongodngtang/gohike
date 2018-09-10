@@ -33,58 +33,63 @@ export default class register extends Component {
     this.password = e.target.value.trim()
   }
 
+  onCountDownClick = (startCounting)=>{
+    if (isStrNull(this.phone)) {
+      showToast('手机号码不能为空')
+      return
+    }
+    let body = {
+      option_type: 'register',
+      vcode_type: 'mobile',
+      mobile: this.phone
+    };
+    v_code(body, data => {
+      startCounting(true)
+    })
+  }
 
   render() {
-    return <View className={'login'}>
-      <NavBar title={'注册'}/>
+    return <View className='login'>
+      <NavBar title='注册' />
 
-      <View className={'card flex-column-center'}>
-        <View style={'margin-top:80px'}/>
-        <View className={'v_pwd flex-row'}>
+      <View className='card flex-column-center'>
+        <View style='margin-top:80px' />
+        <View className='v_pwd flex-row'>
           <Input
-            type={'number'}
+            type='number'
             onInput={this.onInput}
-            className={'input_name'}
-            placeholder={'手机号码'}/>
+            className='input_name'
+            placeholder='手机号码' 
+          />
         </View>
 
-        <View className={'v_pwd flex-row'}>
+        <View className='v_pwd flex-row'>
           <Input
             onInput={e => {
               this.vcode = e.target.value.trim()
             }}
-            className={'input_pwd'}
-            placeholder={'短信验证码'}/>
+            className='input_pwd'
+            placeholder='短信验证码' 
+          />
           <CountDownButton
             enable
-            onClick={(startCounting) => {
-              if (isStrNull(this.phone)) {
-                showToast('手机号码不能为空')
-                return
-              }
-              let body = {
-                option_type: 'register',
-                vcode_type: 'mobile',
-                mobile: this.phone
-              };
-              v_code(body, data => {
-                startCounting(true)
-              })
-
-            }}/>
+            onClick={this.onCountDownClick} 
+          />
 
 
         </View>
-        <View className={'v_pwd flex-row'}>
+        <View className='v_pwd flex-row'>
           <Input
             onInput={this.onInputPwd}
-            className={'input_name'}
-            placeholder={'输入密码'}/>
+            className='input_name'
+            placeholder='输入密码' 
+          />
         </View>
 
         <Button
           onClick={this.onRegister}
-          className={'btn_login'}>注册</Button>
+          className='btn_login'
+        >注册</Button>
 
 
       </View>
