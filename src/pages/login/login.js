@@ -22,13 +22,15 @@ export default class login extends Component {
     super(...arguments)
     this.phone = null
     this.vcode = null
-
+    this.password = null
   }
 
   onInput = e => {
     this.phone = e.target.value
   }
-
+  onInputPwd = e => {
+    this.password = e.target.value.trim()
+  }
 
   render() {
     return <View className={'login'}>
@@ -46,31 +48,38 @@ export default class login extends Component {
 
         <View className={'v_pwd flex-row'}>
           <Input
-            onInput={e => {
-              this.vcode = e.target.value
-            }}
-            className={'input_pwd'}
-            placeholder={'短信验证码'}/>
-          <CountDownButton
-            enable
-            onClick={(startCounting) => {
-              if (isStrNull(this.phone)) {
-                showToast('手机号码不能为空')
-                return
-              }
-              let body = {
-                option_type: 'login',
-                vcode_type: 'mobile',
-                mobile: this.phone
-              };
-              v_code(body, data => {
-                startCounting(true)
-              })
-
-            }}/>
-
-
+            password
+            onInput={this.onInputPwd}
+            className={'input_name'}
+            placeholder={'输入密码'}/>
         </View>
+        {/*<View className={'v_pwd flex-row'}>*/}
+          {/*<Input*/}
+            {/*onInput={e => {*/}
+              {/*this.vcode = e.target.value*/}
+            {/*}}*/}
+            {/*className={'input_pwd'}*/}
+            {/*placeholder={'短信验证码'}/>*/}
+          {/*<CountDownButton*/}
+            {/*enable*/}
+            {/*onClick={(startCounting) => {*/}
+              {/*if (isStrNull(this.phone)) {*/}
+                {/*showToast('手机号码不能为空')*/}
+                {/*return*/}
+              {/*}*/}
+              {/*let body = {*/}
+                {/*option_type: 'login',*/}
+                {/*vcode_type: 'mobile',*/}
+                {/*mobile: this.phone*/}
+              {/*};*/}
+              {/*v_code(body, data => {*/}
+                {/*startCounting(true)*/}
+              {/*})*/}
+
+            {/*}}/>*/}
+
+
+        {/*</View>*/}
 
         <Button
           onClick={this.onLogin}
@@ -89,14 +98,14 @@ export default class login extends Component {
   }
 
   onLogin = () => {
-    if (isStrNull(this.vcode) || isStrNull(this.phone)) {
+    if (isStrNull(this.password) || isStrNull(this.phone)) {
       showToast('手机号或验证码不能为空')
       return
     }
     let body = {
-      type: 'vcode',
+      type: 'mobile',
       mobile: this.phone,
-      vcode: this.vcode
+      password: this.password
     }
     postLogin(body, data => {
 

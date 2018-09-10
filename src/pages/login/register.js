@@ -77,7 +77,7 @@ export default class register extends Component {
         </View>
         <View className={'v_pwd flex-row'}>
           <Input
-            onInput={this.onInput}
+            onInput={this.onInputPwd}
             className={'input_name'}
             placeholder={'输入密码'}/>
         </View>
